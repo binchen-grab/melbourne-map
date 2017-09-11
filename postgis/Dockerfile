@@ -7,7 +7,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/dooman87/openstreetmap-carto.git && \
-    wget https://s3.amazonaws.com/metro-extracts.mapzen.com/melbourne_australia.osm.pbf
+    wget http://download.geofabrik.de/asia/philippines-latest.osm.pbf
 
 
 #Overriding init script to add hstore extension that osm2pgsql requires
